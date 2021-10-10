@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: darkgray;
+        }
+
+        h1{
+            color: white;
+            background-color: blue;
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+            margin: 20px 40px;
+        }
+
+        .cont{
+            border: 2px solid red;
+            background-color: cornflowerblue;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .box{
+            background-color: green;
+            width: 45%;
+            border: 2px solid red;
+            /height: 70vh;/
+            margin: 20px;
+            padding: 20px;
+            
+        }
+
+        .exp{
+            background-color: green;
+            width: 45%;
+            border: 2px solid red;
+            height: 70vh;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #box{
+            border: 12px solid rgb(4, 26, 73);
+            margin: 100px;
+            padding: 100px;
+            background-color: hotpink;
+            color: rgb(193, 221, 36);
+            font-size: 20px;
+        }
+
+        #a{
+            text-align: center;
+            color: rgb(19, 247, 49);
+            margin-top: 0;
+        }
+
+        p{
+            font-size: 25px;
+            padding: 5px;
+        }
+
+        h3{
+            color: rgb(27, 4, 129);
+            font-size: 25px;
+            margin-top: 15px;
+        }
+
+        li{
+            font-size: 22px;
+            color: rgb(124, 4, 4);
+            list-style: square;
+        }
+
+        dl{
+            font-size: 19px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>BOX MODEL</h1>
+    <div class="cont">
+        <div class="box">
+            <div id="box">
+                HI , I am content inside this box.
+            </div>
+        </div>
+        <div class="exp">
+            <h1 id="a">Explanation</h2>
+            <p>The CSS box model is a box that wraps around every HTML element.It consists of : margins , borders , padding and the content.</p>
+            <ul>
+                <h3>Content</h3>
+                <li>The content of the box, where text and images appear</li>
+                <dl>-> here the text written in yellow colour if content.</dl>
+
+                <h3>Padding</h3>
+                <li>Clears an area around the content.The padding is transparent.</li>
+                <dl>-> here the gap between border and the content which is in pink color is padding.</dl>
+
+                <h3>Border</h3>
+                <li>A border that goes around the padding and content.</li>
+                <dl>-> here darkblue colour outline is border.</dl>
+
+                <h3>Margin</h3>
+                <li>Clears an area outside the border. The margin is transparent.</li>
+                <dl>-> here the gap coloured in green is margin of the inside box.</dl>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
