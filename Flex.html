@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      background: #797DA4;
+    }
+
+    .box {
+      padding: 20px;
+      margin: 10px;
+      border: 2px solid #6E0B29;
+      background-color: #91baf0;
+    }
+
+    h2 {
+      color: rgb(238, 12, 144);
+      background: #9be5a1;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 0px;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    /*.box1 {
+      height: 100px;
+      width: 100px;
+      background-color: #2B5ACB;
+      margin: 8px 5px;
+      border-radius: 10px;
+    }*/
+
+    img{
+        height: 100px;
+        width: 100px;
+        margin: 5px 20px;
+    }
+
+    
+    #b {
+      display: flex;
+    }
+
+    #c {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #d {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #e {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    #f {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    
+    #g{
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    #h{
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  </style>
+</head>
+
+<body>
+  <h2> Without Flex </h2>
+  <div class="box" id="a">
+      <img src="https://lh3.googleusercontent.com/pw/AM-JKLWf7wbozA73CLYFLxZTnbbc3vUpWHWpA-rZukY9Hmt8MV__6kavvFDcV9pn9ZdkTpalWgm0CJqOLGJQio30abm4VFPu-bpTZM-9ysHaopuwELYpuCgMKbZ4M8UvWgL92W8BA9Jrxfp_NR5B9HZ4s_uL=w261-h193-no?authuser=0" alt="">
+      <img src="https://lh3.googleusercontent.com/pw/AM-JKLWjTo7mhfRjgke7r6-5Meie85BsuMthop1-YzFNkCOAauvqz5SfXVgIIAcoKhmyK8WgYHK1DL9JCoUgA1kT_d5wLzl9yfiMJwzxx1KHWVySlt0TUYLVX_IIVqSN_mKlFqIYH98BoJTjXoEpfv8sbMig=w275-h183-no?authuser=0" alt="">
+      <img src="https://lh3.googleusercontent.com/pw/AM-JKLUSSTHunPNoxSSh6GXNVmFehWKNDDtoRqVT7O_N6DQI6ghWK-_6c0X7zNkIRQWb3fhQxNz-Oi2PDkWoSLjsyG8rx-XXODzizndLaZdz3knEeTdCndEEOri4mIMadqYMmFi2QOcOyjfmcaII1Xiw11S7=w275-h183-no?authuser=0" alt="">
+    
+  </div>
+  
+  <h2> With Flex </h2>
+  <div class="box" id="b">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWf7wbozA73CLYFLxZTnbbc3vUpWHWpA-rZukY9Hmt8MV__6kavvFDcV9pn9ZdkTpalWgm0CJqOLGJQio30abm4VFPu-bpTZM-9ysHaopuwELYpuCgMKbZ4M8UvWgL92W8BA9Jrxfp_NR5B9HZ4s_uL=w261-h193-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWjTo7mhfRjgke7r6-5Meie85BsuMthop1-YzFNkCOAauvqz5SfXVgIIAcoKhmyK8WgYHK1DL9JCoUgA1kT_d5wLzl9yfiMJwzxx1KHWVySlt0TUYLVX_IIVqSN_mKlFqIYH98BoJTjXoEpfv8sbMig=w275-h183-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLUSSTHunPNoxSSh6GXNVmFehWKNDDtoRqVT7O_N6DQI6ghWK-_6c0X7zNkIRQWb3fhQxNz-Oi2PDkWoSLjsyG8rx-XXODzizndLaZdz3knEeTdCndEEOri4mIMadqYMmFi2QOcOyjfmcaII1Xiw11S7=w275-h183-no?authuser=0" alt="">
+    
+  </div>
+  
+  <h2>Flex direction - row </h2>
+  <div class="box" id="c">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWf7wbozA73CLYFLxZTnbbc3vUpWHWpA-rZukY9Hmt8MV__6kavvFDcV9pn9ZdkTpalWgm0CJqOLGJQio30abm4VFPu-bpTZM-9ysHaopuwELYpuCgMKbZ4M8UvWgL92W8BA9Jrxfp_NR5B9HZ4s_uL=w261-h193-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWjTo7mhfRjgke7r6-5Meie85BsuMthop1-YzFNkCOAauvqz5SfXVgIIAcoKhmyK8WgYHK1DL9JCoUgA1kT_d5wLzl9yfiMJwzxx1KHWVySlt0TUYLVX_IIVqSN_mKlFqIYH98BoJTjXoEpfv8sbMig=w275-h183-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLUSSTHunPNoxSSh6GXNVmFehWKNDDtoRqVT7O_N6DQI6ghWK-_6c0X7zNkIRQWb3fhQxNz-Oi2PDkWoSLjsyG8rx-XXODzizndLaZdz3knEeTdCndEEOri4mIMadqYMmFi2QOcOyjfmcaII1Xiw11S7=w275-h183-no?authuser=0" alt="">
+   
+  </div>
+  
+  <h2>Flex direction - column </h2>
+  <div class="box" id="d">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWf7wbozA73CLYFLxZTnbbc3vUpWHWpA-rZukY9Hmt8MV__6kavvFDcV9pn9ZdkTpalWgm0CJqOLGJQio30abm4VFPu-bpTZM-9ysHaopuwELYpuCgMKbZ4M8UvWgL92W8BA9Jrxfp_NR5B9HZ4s_uL=w261-h193-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWjTo7mhfRjgke7r6-5Meie85BsuMthop1-YzFNkCOAauvqz5SfXVgIIAcoKhmyK8WgYHK1DL9JCoUgA1kT_d5wLzl9yfiMJwzxx1KHWVySlt0TUYLVX_IIVqSN_mKlFqIYH98BoJTjXoEpfv8sbMig=w275-h183-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLUSSTHunPNoxSSh6GXNVmFehWKNDDtoRqVT7O_N6DQI6ghWK-_6c0X7zNkIRQWb3fhQxNz-Oi2PDkWoSLjsyG8rx-XXODzizndLaZdz3knEeTdCndEEOri4mIMadqYMmFi2QOcOyjfmcaII1Xiw11S7=w275-h183-no?authuser=0" alt="">
+    
+  </div>
+  
+  <h2>Justify-content : Space Between</h2>
+  <div class="box" id="e">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWf7wbozA73CLYFLxZTnbbc3vUpWHWpA-rZukY9Hmt8MV__6kavvFDcV9pn9ZdkTpalWgm0CJqOLGJQio30abm4VFPu-bpTZM-9ysHaopuwELYpuCgMKbZ4M8UvWgL92W8BA9Jrxfp_NR5B9HZ4s_uL=w261-h193-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWjTo7mhfRjgke7r6-5Meie85BsuMthop1-YzFNkCOAauvqz5SfXVgIIAcoKhmyK8WgYHK1DL9JCoUgA1kT_d5wLzl9yfiMJwzxx1KHWVySlt0TUYLVX_IIVqSN_mKlFqIYH98BoJTjXoEpfv8sbMig=w275-h183-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLUSSTHunPNoxSSh6GXNVmFehWKNDDtoRqVT7O_N6DQI6ghWK-_6c0X7zNkIRQWb3fhQxNz-Oi2PDkWoSLjsyG8rx-XXODzizndLaZdz3knEeTdCndEEOri4mIMadqYMmFi2QOcOyjfmcaII1Xiw11S7=w275-h183-no?authuser=0" alt="">
+    
+  </div>
+  
+  <h2>Justify-content : Space Around</h2>
+  <div class="box" id="f">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWf7wbozA73CLYFLxZTnbbc3vUpWHWpA-rZukY9Hmt8MV__6kavvFDcV9pn9ZdkTpalWgm0CJqOLGJQio30abm4VFPu-bpTZM-9ysHaopuwELYpuCgMKbZ4M8UvWgL92W8BA9Jrxfp_NR5B9HZ4s_uL=w261-h193-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWjTo7mhfRjgke7r6-5Meie85BsuMthop1-YzFNkCOAauvqz5SfXVgIIAcoKhmyK8WgYHK1DL9JCoUgA1kT_d5wLzl9yfiMJwzxx1KHWVySlt0TUYLVX_IIVqSN_mKlFqIYH98BoJTjXoEpfv8sbMig=w275-h183-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLUSSTHunPNoxSSh6GXNVmFehWKNDDtoRqVT7O_N6DQI6ghWK-_6c0X7zNkIRQWb3fhQxNz-Oi2PDkWoSLjsyG8rx-XXODzizndLaZdz3knEeTdCndEEOri4mIMadqYMmFi2QOcOyjfmcaII1Xiw11S7=w275-h183-no?authuser=0" alt="">
+    
+  </div>
+  
+  <h2>align-items : center</h2>
+  <div class="box" id="g">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWf7wbozA73CLYFLxZTnbbc3vUpWHWpA-rZukY9Hmt8MV__6kavvFDcV9pn9ZdkTpalWgm0CJqOLGJQio30abm4VFPu-bpTZM-9ysHaopuwELYpuCgMKbZ4M8UvWgL92W8BA9Jrxfp_NR5B9HZ4s_uL=w261-h193-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWjTo7mhfRjgke7r6-5Meie85BsuMthop1-YzFNkCOAauvqz5SfXVgIIAcoKhmyK8WgYHK1DL9JCoUgA1kT_d5wLzl9yfiMJwzxx1KHWVySlt0TUYLVX_IIVqSN_mKlFqIYH98BoJTjXoEpfv8sbMig=w275-h183-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLUSSTHunPNoxSSh6GXNVmFehWKNDDtoRqVT7O_N6DQI6ghWK-_6c0X7zNkIRQWb3fhQxNz-Oi2PDkWoSLjsyG8rx-XXODzizndLaZdz3knEeTdCndEEOri4mIMadqYMmFi2QOcOyjfmcaII1Xiw11S7=w275-h183-no?authuser=0" alt="">
+    
+  </div>
+
+  <h2>align-items : flex-end</h2>
+  <div class="box" id="h">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWf7wbozA73CLYFLxZTnbbc3vUpWHWpA-rZukY9Hmt8MV__6kavvFDcV9pn9ZdkTpalWgm0CJqOLGJQio30abm4VFPu-bpTZM-9ysHaopuwELYpuCgMKbZ4M8UvWgL92W8BA9Jrxfp_NR5B9HZ4s_uL=w261-h193-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLWjTo7mhfRjgke7r6-5Meie85BsuMthop1-YzFNkCOAauvqz5SfXVgIIAcoKhmyK8WgYHK1DL9JCoUgA1kT_d5wLzl9yfiMJwzxx1KHWVySlt0TUYLVX_IIVqSN_mKlFqIYH98BoJTjXoEpfv8sbMig=w275-h183-no?authuser=0" alt="">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLUSSTHunPNoxSSh6GXNVmFehWKNDDtoRqVT7O_N6DQI6ghWK-_6c0X7zNkIRQWb3fhQxNz-Oi2PDkWoSLjsyG8rx-XXODzizndLaZdz3knEeTdCndEEOri4mIMadqYMmFi2QOcOyjfmcaII1Xiw11S7=w275-h183-no?authuser=0" alt="">
+    
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
