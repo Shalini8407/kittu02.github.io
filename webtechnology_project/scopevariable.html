@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Variable Scope</title>
+</head> 
+<body>
+</body>
+<script>
+
+    const num = 2006186; // val cannot be redefined
+    console.log(num);
+    
+    let city = "Madhubani"; // val can be redefined
+    console.log(city);
+    
+    var name = "Shalini";
+    console.log(name); // global scope
+    
+    
+    function myName(){
+        
+        console.log(num);
+        
+        var name = "SHALINI KUMARI";
+        console.log(name); // local scope only within this function
+    }
+    
+    myName();
+    
+</script>
+</html>
